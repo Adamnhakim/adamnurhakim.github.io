@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#6b11ff" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0b0f19" />
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="url(#grad)" stroke-width="2" stroke-opacity="0.6" />
+  <!-- Circuit Nodes -->
+  <circle cx="16" cy="18" r="3" fill="#00f2fe" />
+  <circle cx="48" cy="18" r="3" fill="#6b11ff" />
+  <circle cx="32" cy="48" r="3" fill="#4facfe" />
+  <path d="M16 18L32 48L48 18" stroke="#4facfe" stroke-width="1.5" stroke-dasharray="2 2" stroke-opacity="0.5"/>
+  <!-- ANH Monogram -->
+  <text x="32" y="38" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="20" letter-spacing="-0.5" filter="url(#glow)">ANH</text>
+</svg>
